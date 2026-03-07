@@ -3,7 +3,7 @@
 ## Color Palette
 - Primary: #212B5F (navy)
 - Accent: #A73232 (red)
-- Background: #FFFFFF, #F4F4F4
+- Background: #F4F4F4
 - Text: #000000
 
 ## Theme & Style Separation

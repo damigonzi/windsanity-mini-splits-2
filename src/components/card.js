@@ -6,6 +6,7 @@ export function createCard({ title = '', description = '', image = '' }) {
     const img = document.createElement('img');
     img.src = image;
     img.alt = title;
+    img.loading = 'lazy';
     card.appendChild(img);
   }
   const h3 = document.createElement('h3');
