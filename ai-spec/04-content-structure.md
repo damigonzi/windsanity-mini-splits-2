@@ -20,3 +20,24 @@
 
 ## Reference Inputs
 - Use the local reference folder and live site for content ideas, not for direct implementation
+
+## Image Asset Structure
+
+Project images are not stored in a flat `/images` directory.
+
+Actual image structure:
+
+- `/images/customer_projects/` for real installation and project photos
+- `/images/graphics/` for supporting graphics and decorative visuals
+- `/images/logo/windsanity-logo.webp` for the business logo
+- `/images/Home+Page+Image.webp` for the homepage hero image
+
+Guidance:
+- Hero sections should prefer `/images/Home+Page+Image.webp`
+- Logo usage should always use `/images/logo/windsanity-logo.webp`
+- Project cards and gallery sections should use valid images from `/images/customer_projects/`
+- Decorative graphics may use valid images from `/images/graphics/`
+
+Do not assume a flat `/images` structure.
+Do not reference `/public/images` in browser paths.
+For Vite public assets, use paths like `/images/...`

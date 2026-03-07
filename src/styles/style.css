@@ -1,0 +1,16 @@
+/* style.css: Main layout and component styles */
+@import './theme.css';
+
+body {
+  font-family: var(--font-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}

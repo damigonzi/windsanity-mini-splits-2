@@ -357,3 +357,10 @@ Reusable section types:
 -   project gallery
 -   CTA banner
 -   contact form
+
+## Image Usage Guidance
+
+- Hero sections should prefer the homepage hero image
+- Project/gallery sections should use customer project images
+- Decorative/supporting sections may use graphics images
+- Logo usage should always use the dedicated logo asset

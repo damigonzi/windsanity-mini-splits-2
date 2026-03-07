@@ -29,3 +29,5 @@
 
 ## Reference Inputs
 - Use /websites/windsanity-mini-splits and https://www.windsanity-mini-splits.com/ for content and structure reference only
+
+This site should use true multi-page architecture. Each page should load its own page-specific module rather than relying on client-side pathname routing in a shared main entry file.
