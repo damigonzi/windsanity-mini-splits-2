@@ -4,7 +4,6 @@ export function createHero({ headline, subheadline, description, primaryCta, sec
   section.className = 'hero-section section';
   section.innerHTML = `
     <div class="container">
-      ${image ? `<img src="${image}" alt="Mini-split installation" loading="eager" />` : ''}
       <div class="hero-content">
         <h1>${headline}</h1>
         <h2>${subheadline}</h2>

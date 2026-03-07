@@ -17,9 +17,24 @@ export function createHeader() {
           <li><a href="/calculator.html">Calculator</a></li>
           <li><a href="/blog.html">Blog</a></li>
         </ul>
-        <a href="/contact.html" class="nav-cta">Contact</a>
+        <a href="/contact.html" class="nav-cta btn btn-primary">Contact</a>
       </nav>
     </div>
   `;
+  // Add active state to current nav link
+  setTimeout(() => {
+    const navLinks = header.querySelectorAll('.nav-links a');
+    const currentPath = window.location.pathname.replace(/\/index\.html$/, '/');
+    navLinks.forEach(link => {
+      // Normalize trailing slashes for comparison
+      const linkPath = link.getAttribute('href').replace(/\/index\.html$/, '/');
+      if (
+        linkPath === currentPath ||
+        (linkPath === '/' && currentPath === '/index.html')
+      ) {
+        link.classList.add('active');
+      }
+    });
+  }, 0);
   return header;
 }

@@ -1,3 +1,18 @@
+@media (max-width: 480px) {
+  .container {
+    padding-left: var(--spacing-xs);
+    padding-right: var(--spacing-xs);
+  }
+  .section {
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
+  .services-grid {
+    gap: var(--spacing-sm);
+  }
+  /* Only add if horizontal overflow is observed */
+  /* html, body { overflow-x: hidden; } */
+}
 /* Button system base and variants */
 .btn {
   display: inline-block;
@@ -224,25 +239,17 @@ p {
   background: var(--color-bg-alt);
   color: var(--color-accent);
 }
-.nav-cta {
-  margin-left: var(--spacing-lg);
+
+.nav-links a.active {
   background: var(--color-accent);
   color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: var(--spacing-xs) var(--spacing-lg);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  text-decoration: none;
-  transition: background 0.15s, color 0.15s;
-  border: none;
-  display: inline-block;
+  cursor: default;
 }
-.nav-cta:hover,
-.nav-cta:focus {
-  background: var(--color-primary);
-  color: #fff;
+
+.nav-cta {
+  margin-left: var(--spacing-lg);
 }
+/* layout-specific only; visual styles now handled by .btn/.btn-primary */
 @media (max-width: 900px) {
   .navbar {
     flex-direction: column;
@@ -308,30 +315,30 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: var(--color-bg-alt);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  padding: var(--spacing-xl) 0;
-  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+  background: url('/images/Home+Page+Image.webp') center center / cover no-repeat;  display: flex;
   align-items: center;
   justify-content: center;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 0;
 }
 .hero-section .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--spacing-lg);
   max-width: 1000px;
   width: 100%;
-}
-.hero-section img {
-  width: 100%;
-  max-width: 380px;
-  max-height: 340px;
-  object-fit: cover;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  margin-bottom: var(--spacing-lg);
+  position: relative;
+  z-index: 1;
+  color: #fff;
 }
 .hero-content {
   display: flex;
@@ -340,23 +347,11 @@ body {
   gap: var(--spacing-md);
   max-width: 540px;
 }
-.hero-section {
-  background: var(--color-bg-alt);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  padding-left: var(--spacing-md);
-  padding-right: var(--spacing-md);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--spacing-md);
-  max-width: 540px;
-}
+
 
 .hero-section p {
   font-size: 1.1rem;
   margin-bottom: var(--spacing-md);
-  color: var(--color-text);
 }
 .hero-ctas {
   display: flex;
@@ -381,16 +376,6 @@ body {
   color: #fff;
 }
 @media (min-width: 900px) {
-  .hero-section .container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-xl);
-  }
-  .hero-section img {
-    margin-bottom: 0;
-    margin-right: var(--spacing-xl);
-  }
   .hero-content {
     align-items: flex-start;
     max-width: 520px;
