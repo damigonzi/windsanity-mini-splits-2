@@ -13,5 +13,14 @@
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 32px;
+  --spacing-xl: 56px;
   --container-max: 1200px;
+
+  /* Footer dark palette */
+  --color-footer-bg: #1a2233;
+  --color-footer-bg-dark: #181e2a;
+  --color-footer-border: #232b3d;
+  --color-footer-text: #f4f4f4;
+  --color-footer-text-muted: #e0e6f0;
+  --color-footer-text-subtle: #b3b9c9;
 }

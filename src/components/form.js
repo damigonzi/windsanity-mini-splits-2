@@ -20,10 +20,25 @@ export function createContactForm() {
       <input type="tel" id="phone" name="phone" />
     </div>
     <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
+      <label for="zip">ZIP Code</label>
+      <input type="text" id="zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" />
     </div>
-    <button type="submit" class="btn btn-primary">Send Message</button>
+    <div class="form-group">
+      <label for="service">Service Type</label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Select a service</option>
+        <option value="Mini-Split Installation">Mini-Split Installation</option>
+        <option value="Repair & Diagnostics">Repair &amp; Diagnostics</option>
+        <option value="Maintenance">Maintenance</option>
+        <option value="Consultation">Consultation</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Request</button>
   `;
   return form;
 }

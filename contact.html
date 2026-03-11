@@ -9,6 +9,23 @@
   <link rel="stylesheet" href="/src/styles/style.css">
 </head>
 <body>
+  <!-- Static form for Netlify Forms bot detection (hidden from users, rendered by JS below) -->
+  <form name="contact" method="POST" data-netlify="true" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <input type="text" name="zip" />
+    <select name="service">
+      <option value="Mini-Split Installation">Mini-Split Installation</option>
+      <option value="Repair & Diagnostics">Repair &amp; Diagnostics</option>
+      <option value="Maintenance">Maintenance</option>
+      <option value="Consultation">Consultation</option>
+      <option value="Other">Other</option>
+    </select>
+    <textarea name="message"></textarea>
+  </form>
+
   <div id="app"></div>
   <script type="module" src="/src/scripts/contact.js"></script>
 </body>

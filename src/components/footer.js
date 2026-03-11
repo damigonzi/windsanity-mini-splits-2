@@ -10,7 +10,8 @@ export function createFooter() {
           <div class="footer-contact">
             <span>Veteran-Owned HVAC Specialist</span><br>
             <span>Serving the local area</span><br>
-            <span>Email: <a href="mailto:info@windsanity-mini-splits.com">info@windsanity-mini-splits.com</a></span>
+            <span>Phone: <a href="tel:+14026135142">(402) 613-5142</a></span><br>
+            <span>Email: <a href="mailto:windsanity.mini.split@gmail.com">windsanity.mini.split@gmail.com</a></span>
           </div>
         </div>
         <nav class="footer-nav">
@@ -25,9 +26,8 @@ export function createFooter() {
         </nav>
         <div class="footer-social">
           <ul class="footer-social-links">
-            <li><a href="#" aria-label="Facebook">Facebook</a></li>
-            <li><a href="#" aria-label="Instagram">Instagram</a></li>
-            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/WinsanityMiniSplits" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com/windsanity.us" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           </ul>
         </div>
       </div>

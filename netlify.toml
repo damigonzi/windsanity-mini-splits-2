@@ -1,0 +1,24 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  # Future: serverless functions directory
+  # functions = "netlify/functions"
+
+# ---------------------------------------------------------------------------
+# MVP: Netlify Forms + email notifications
+# Configure email notifications in the Netlify UI:
+#   Site > Forms > contact > Notifications > Email notification
+#
+# MVP: Slack webhook
+# Configure in the Netlify UI:
+#   Site > Forms > contact > Notifications > Slack notification
+#   Paste the Slack incoming webhook URL (store it in Netlify env vars,
+#   do not hard-code it here)
+#
+# Future: Twilio SMS or advanced logic
+#   Uncomment `functions` above and add a serverless function in
+#   netlify/functions/ that reads TWILIO_* from Netlify environment variables
+# ---------------------------------------------------------------------------
+
+[build.environment]
+  NODE_VERSION = "20"
